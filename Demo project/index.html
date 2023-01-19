@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Demo Prathik Visuals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins
+        :wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+   </head>
+
+   
+    <body>
+         <!-- <div id="preloader"> </div> -->
+        
+        <section class="header">
+            <div class="bubbles">
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+                <img src="images/bubble.png" >
+            </div>
+            <!--Nav bar-->
+            <nav>
+                <a href="index.html"><img src="images/podcastlogo.png" ></a> 
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="Photos.html">PHOTOS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+            
+
+            <!--Text box-->
+            <div class="text-box">
+                <h1>LEVEL UP <br>VISULIZATION</h1>
+                <p ><div class="prathik">
+                   In the Virtual World, lives and feeling are measured  <br>
+                   not by the distance of miles but by the<br>
+                   Reality of our Desires.
+                    
+                </div>
+                </p>
+                <a href="paint.html" class="hero-btn">Let's Go <i class="fas fa-angle-double-right" ></i></a>   
+            </div>
+            <div class="fixed">
+               
+                <i class="fas fa-comments"></i> <input type="comments" placeholder="Need help">
+            </div>
+           
+
+        </section>
+
+
+         <!------Call to action------->
+    <div class="bg">
+    <section class="cta">
+
+        <h1>NEED TEMPLATES<br> TO LEVEL UP YOUR PHOTOGRAPHY
+        </h1>
+        <a href="" class="hero-btn pink">CONTACT US</a>
+    </section>
+</div>
+
+
+
+    <!--Footer-->
+
+
+    <section class="footer">
+        <h3>About Us</h3>
+        <p> Hey, hi I am Prathik.<br>
+        I do freelancing,UI/UX designer and frontend developer </p>
+       <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-github-square"></i>
+       </div>
+       <p>Made with <i class="fas fa-heart"></i> by Prathik  </p>
+    </section>
+
+
+     <!--Javascript code for todddle menu-->
+        <script>
+           var navLinks = document.getElementById("navLinks");    
+
+           function showMenu(){
+               navLinks.style.right ="0";
+           }
+
+           function hideMenu(){
+               navLinks.style.right ="-200px";
+           }
+
+           
+        </script>
+        <script>
+            var loader = document.getElementById("preloader");
+
+          window.addEventListener("Load",function(){
+          loader.style.display = "none";
+          })
+        </script>
+    
+   </body>
+</html>

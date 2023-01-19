@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Prathik Visuals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins
+        :wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> 
+   </head>
+
+   <body>
+    <section class="about-us">
+        
+        <!--Nav bar-->
+        <nav>
+            <a href="index.html"><img src="images/podcastlogo.png" ></a> 
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Photos.html">PHOTOS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="sub-header">
+            About us 
+
+        </div>
+    
+    </section>
+
+    <section class="content">
+        <div class="myimage">
+            <img src="images/myimage.jpg" alt="prathik" width="400px" height="400px">
+        </div>
+        <div class="information">
+            Hey , I am Prathik a software engineer at Amazon .<br>
+            I am also a free lancer . I am a full-stack web and android developer.
+        </div>
+    </section>
+     <!--Footer-->
+
+
+     <section class="footer">
+        <h3>About Us</h3>
+        <p> Hey, hi I am Prathik.<br>
+            I do freelancing,UI/UX designer and frontend developer </p>
+       <div class="icons">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-github-square"></i>
+       </div>
+       <p>Made with <i class="fas fa-heart"></i> by Prathik  </p>
+    </section>
+
+    <!--Javascript code for todddle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");    
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+
+        
+     </script>
+     <script>
+         var loader = document.getElementById("preloader");
+
+       window.addEventListener("Load",function(){
+       loader.style.display = "none";
+       })
+     </script>
+   </body>
+</html>
